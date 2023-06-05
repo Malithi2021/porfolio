@@ -1,0 +1,51 @@
+ .container.education_container{
+    width:40%;
+padding: -1rem;
+} 
+
+.education_logo{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary-variant);
+}
+
+
+.education{
+    background: var(--color-bg-variant);
+     text-align: center;   
+    padding: 2rem;
+    border-radius: 1rem;
+    user-select: none;
+}
+
+.education_review{
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    margin: 0.8rem auto 0;
+} 
+
+
+/*medium deivces*/
+@media screen and (max-width: 1024px){
+   .container.education_container{
+    width: 60%;
+
+   }
+  }
+  
+  
+  /*small deivces*/
+  @media screen and (max-width: 600px){
+     .container.education_container{
+        width: var(--container-width-sm);
+     }
+
+     .education_review{
+        width: var(--container-width-sm);
+     }
+  }
