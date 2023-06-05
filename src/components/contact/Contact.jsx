@@ -2,8 +2,26 @@ import React from 'react'
 import './Contact.css';
 import {SiGmail} from 'react-icons/si'
 import {SiMicrosoftoutlook} from 'react-icons/si'
-import {BsWhatsapp} from 'react-icons/bs'
+import {BsWhatsapp} from 'react-icons/bs';
+import  { useRef } from 'react';
+import emailjs from 'emailjs-com'
+
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ttcqh5n', 'template_as1dzjm', form.current, 'HbUehDyKXf1XThLh8')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+  };
   return (
    <section id='contact'>
    <h5>Get In Touch</h5>
@@ -30,7 +48,7 @@ const Contact = () => {
     </article>
   </div>
 {/* end of contact options  */}
-<form action="">
+<form ref={form} onSubmit={sendEmail}>
  <input type='text' name='name' placeholder='Your Full Name' required/>
  <input type='email' name='email' placeholder='Your Email1' required/>
  <textarea  name='message' placeholder='Your Message' rows='7' required></textarea>
