@@ -1,5 +1,5 @@
 import React from 'react';
-import ME from '../../assets/meme.jpeg';
+import ME from '../../assets/tt.jpeg';
 import { FaAward } from 'react-icons/fa';
 import { FaLaptopCode } from 'react-icons/fa';
 import { MdOutlineArticle } from 'react-icons/md';
@@ -37,8 +37,8 @@ function About() {
             </article>
           </div>
 
-          <p>
-          Hey there! I'm Malithi Abayadeera, a tech enthusiast and an undergraduate student at the University of Moratuwa. With expertise in web development (React, Node.js, PHP) and a passion for UI/UX design, I bring creativity and functionality together. I also love sharing tech knowledge through writing. Let's create captivating digital experiences together!
+          <p className='para'>
+      Hey there, I'm Malithi Abayadeera, a tech enthusiast and IT undergraduate at the University of Moratuwa. With expertise in React, Node.js, PHP, and a passion for UI/UX design, I combine creativity and functionality to create captivating digital experiences. As a graduate of computer science majoring in software engineering from Edith Cowen University in Perth, I bring a strong foundation in computer science principles. I love sharing tech knowledge through writing and strive to craft intuitive user interfaces. Let's collaborate and bring innovative ideas to life, creating exceptional digital experiences together!
           </p>
           <a href='#contact' className='btn btn-primary'>Let's Talk</a>
         </div>
