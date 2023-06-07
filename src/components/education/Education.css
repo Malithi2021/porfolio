@@ -1,6 +1,10 @@
  .container.education_container{
-    width:40%;
+   
+display: grid;
+width:40%;
 padding: -1rem;
+
+    
 } 
 
 .education_logo{
@@ -19,6 +23,14 @@ padding: -1rem;
     padding: 2rem;
     border-radius: 1rem;
     user-select: none;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.education:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
 }
 
 .education_review{

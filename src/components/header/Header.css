@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 2.8rem;
     overflow: hidden;
 }
 
@@ -17,6 +17,40 @@ header{
     gap: 1.2rem;
     justify-content: center;
 }
+
+.text-two , .text-light{
+  font-size: 1rem;
+}
+
+/* .animate-character
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 3rem;
+    
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+} */
 
 /*social*/
 
@@ -44,20 +78,21 @@ header{
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    border-radius: 50%;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
+
 
 /*scorll*/
 
 .scroll_down{
     position: absolute;
-    right: -2.3rem;
+    right: -1.6rem;
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 

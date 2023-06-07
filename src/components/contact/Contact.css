@@ -55,6 +55,11 @@ input,textarea{
     color: var(--color-white);
 }
 
+input:hover , textarea:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+    cursor: default;
+}
 
 
 

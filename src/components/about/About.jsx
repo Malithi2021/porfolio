@@ -2,7 +2,7 @@ import React from 'react';
 import ME from '../../assets/meme.jpeg';
 import { FaAward } from 'react-icons/fa';
 import { FaLaptopCode } from 'react-icons/fa';
-import { GrArticle } from 'react-icons/gr';
+import { MdOutlineArticle } from 'react-icons/md';
 import './About.css'
 
 function About() {
@@ -31,7 +31,7 @@ function About() {
               <small>5 Projects</small>
             </article>
             <article className='about_card'>
-              <GrArticle className='about_icon' />
+              <MdOutlineArticle className='about_icon' />
               <h5>Articles</h5>
               <small>3 Articles</small>
             </article>

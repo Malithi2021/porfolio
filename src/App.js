@@ -21,7 +21,7 @@ const App = () => {
 <Exp />
 <Skills />
 <Port />
-<Education />
+{/* <Education /> */}
 <Contact />
 <Footer /> 
    </>
