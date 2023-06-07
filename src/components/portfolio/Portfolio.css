@@ -12,6 +12,10 @@
     transition: var(--transition);
 }
 
+.portfolio-sub{
+    color: var(--color-primary-variant);
+}
+
 .portfolio_item:hover{
     border-color: var(--color-primary-variant);
     background: transparent;

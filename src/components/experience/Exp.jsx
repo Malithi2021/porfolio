@@ -14,7 +14,7 @@ const Exp = () => {
           <article className='experience_details'>
              <BsPatchCheckFill className='experience_details-icon' />
              <div>
-             <h4>HTML</h4>
+             <h4>HTML5</h4>
              <small className='text-light'>Experienced</small>
              </div>
                   </article>
@@ -42,17 +42,17 @@ const Exp = () => {
           </article>
           <article className='experience_details'>
              <BsPatchCheckFill className='experience_details-icon' />
-             <div><h4>HTML</h4>
-             <small className='text-light'>Experienced</small>
+             <div><h4>Angular</h4>
+             <small className='text-light'>Beginner</small>
              </div>
           </article>
-          <article className='experience_details'>
+          {/* <article className='experience_details'>
              <BsPatchCheckFill  className='experience_details-icon'/>
            <div>
            <h4>HTML</h4>
              <small className='text-light'>Experienced</small>
            </div>
-          </article>
+          </article> */}
         </div>
       </div>
       <div className='experience_backend'>
@@ -63,7 +63,7 @@ const Exp = () => {
              <BsPatchCheckFill className='experience_details-icon'/>
              <div>
              <h4>Python</h4>
-             <small className='text-light'>Experienced</small>
+             <small className='text-light'>Intermediate</small>
              </div>
           </article>
           <article className='experience_details'>
@@ -91,18 +91,17 @@ const Exp = () => {
              <BsPatchCheckFill className='experience_details-icon' />
             <div>
             <h4>C</h4>
-             <small className='text-light'>Experienced</small>
+             <small className='text-light'>Intermediate</small>
             </div>
           </article>
           <article className='experience_details'>
              <BsPatchCheckFill className='experience_details-icon' />
              <div>
              <h4>Java</h4>
-             <small className='text-light'>Experienced</small>
+             <small className='text-light'>Intermediate</small>
              </div>
           </article>
         </div>
-     
       </div>
     </div>
    </section>

@@ -62,19 +62,7 @@ const Portfolio = () => {
 
         </article>
         {/* /*end of verion*/}
-        <article className='skill'>
-          <div className='skill_head'>
-            <h3>Version Control</h3>
-          </div>
-
-          <ul className='skill_list'>
-          <li><BiCheck className='skill_list-icon' />
-              <p>Github</p>
-            </li>
-          </ul>
-
-        </article>
-
+       
         <article className='skill'>
           <div className='skill_head'>
             <h3>Office Tools</h3>
@@ -88,11 +76,26 @@ const Portfolio = () => {
 
         <article className='skill'>
           <div className='skill_head'>
+            <h3>Version Control</h3>
+          </div>
+
+          <ul className='skill_list'>
+        
+            <li><BiCheck className='skill_list-icon' />
+              <p>Git</p>
+            </li>
+          </ul>
+
+        </article>
+
+
+        <article className='skill'>
+          <div className='skill_head'>
             <h3>Data Visualization</h3>
           </div>
           <ul className='skill_list'>
           <li><BiCheck className='skill_list-icon' />
-              <p>Google Data Sutdio</p>
+              <p>Looker Studio</p>
             </li>
           </ul>
         </article>
