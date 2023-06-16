@@ -19,6 +19,12 @@
     --color-white: #fff;
     --color-light: rgba(255,255,255,0.6);
     
+    /* --color-bg: #6B3074;
+    --color-bg-variant: #7268A6;
+    --color-primary: #86A3C3;
+    --color-primary-variant: #86A3C3;
+    --color-white: #DBE0BB; */
+    
     --transition: all 400ms ease;
 
     --container-widyh-lg:75%;

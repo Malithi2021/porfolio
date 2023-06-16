@@ -14,51 +14,32 @@ const Portfolio = () => {
       id: 1,
       image: IMG1,
       title: 'Hotel Management Web Application',
-      github: 'https://github.com/Code-Byte-fit/EXOTEL.git',
       sub:'ReactJS | ExpressJS Web Application',
-      demo: ''
+      tech: 'Technologies: React JS, Express JS, MySql'
     },
     {
       id: 2,
       image: IMG2,
       title: 'Mining Kit for miners',
       sub:'Helmet and Chest Belt for Miners Protection',
-      github: '-',
-      demo: ''
+      tech: 'Technologies: Microchip Studio, C , Proteus'
     },
     {
       id: 3,
       image: IMG3,
       title: 'Education Stem Camp Website',
       sub:'HTML5 | CSS Frontend Web Application',
-      github: 'https://github.com/Malithi2021/Education-Camp.git',
-      demo: ''
+      tech: 'Technologies: HTML, CSS'
     },
 
     {
       id: 4,
       image: IMG4,
-      title: 'Beginners Guide to React Hooks',
-      github: 'https://medium.com/@malithirumalka/a-beginners-guide-to-react-hooks-2f0637eb4053',
-      sub:'Medium Article',
-      demo: ''
+      title: 'E-commerce Web Application', 
+      sub:'Onlnie Footwear Web Application',
+      tech: 'Technologies: React JS, Express JS, MongoDB'
     },
-    {
-      id: 5,
-      image: IMG5,
-      title: '“Revolutionizing Healthcare: The Rise of AI in Improving Patient Outcomes”',
-      sub:'Medium Article',
-      github: 'https://medium.com/@malithirumalka/revolutionizing-healthcare-the-rise-of-ai-in-improving-patient-outcomes-55ddadf23157',
-      demo: ''
-    },
-    {
-      id: 6,
-      image: IMG6,
-      title: 'Jira: Streamlining Project Management and Collaboration',
-      sub:'Medium Article',
-      github: 'https://medium.com/@malithirumalka/jira-streamlining-project-management-and-collaboration-755b91cc5ddc',
-      demo: ''
-    },
+
     ]
 
 
@@ -72,18 +53,19 @@ const Portfolio = () => {
 
       <div className='container portfolio_container'>
         {
-          data.map(({ id, image, title, github, demo ,sub}) => {
+          data.map(({ id, image, title, github, tech ,sub}) => {
             return (
               <article key={id} className='portfolio_item'>
                 <div className='portfolio_item-image'>
-                  <img src={image} alt={title} />
+                  {/* <img src='' alt={title}> </img>>  */}
                   <small className='portfolio-sub'>{sub}</small>
                 </div>
                 <h3>{title}</h3>
               
-                <div className='portfolio_item-cta'>
-                  <a href={github} className='btn'>See More</a>
-                  {/* <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a> */}
+               <div className='portfolio_item-cta'>
+                  {/* <a href={github} className='btn'>See More</a>  */}
+                  {/* <a href={tech} className='btn btn-primary' target='_blank'>Live Demo</a> */}
+                  <small className='tect-desc'>{tech}</small>
                 </div>
               </article>
             )

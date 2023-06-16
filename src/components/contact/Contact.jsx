@@ -40,12 +40,12 @@ const Contact = () => {
         <h5>malithirumalka@outlook.com</h5>
         <a href='mailto:malithirumalka@outlook.com' target='_blank'>Send a message</a>
     </article>
-    <article className='contact_option'>
+    {/* <article className='contact_option'>
     <BsWhatsapp  className='contact_option-icon'/>
         <h4>WhatsApp</h4>
         <h5>+94 77 653 6321</h5>
         <a href='https://wa.me/94776536321' target='_blank'>Send a message</a>
-    </article>
+    </article> */}
   </div>
 {/* end of contact options  */}
 <form ref={form} onSubmit={sendEmail}>
