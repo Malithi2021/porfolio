@@ -22,17 +22,17 @@ function About() {
           <div className='about_cards'>
             <article className='about_card'>
               <FaAward className='about_icon' />
-              <h5>Experience</h5>
+              <h5 className='text'>Experience</h5>
               <small>1 year working</small>
             </article>
             <article className='about_card'>
               <FaLaptopCode className='about_icon' />
-              <h5>Projects</h5>
+              <h5 className='text'>Projects</h5>
               <small>5 Projects</small>
             </article>
             <article className='about_card'>
               <MdOutlineArticle className='about_icon' />
-              <h5>Articles</h5>
+              <h5 className='text'>Articles</h5>
               <small>3 Articles</small>
             </article>
           </div>

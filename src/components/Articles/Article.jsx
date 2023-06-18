@@ -36,10 +36,6 @@ const Article = () => {
     },
     ]
 
-
-
-
-
   return (
     <section id='article'>
       <h5>My Recent Work</h5>
@@ -54,10 +50,10 @@ const Article = () => {
                   <img src={image} alt={title} />
                   <small className='article-sub'>{sub}</small>
                 </div>
-                <h3>{title}</h3>
+                <h3 className='text1'>{title}</h3>
               
                 <div className='article_item-cta'>
-                  <a href={link} className='btn'>See More</a>
+                  <a href={link} className='btn1'>See More</a>
                 </div>
               </article>
             )

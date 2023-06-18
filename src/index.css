@@ -66,9 +66,14 @@ section{
  
 }
 
-section > h2, section > h5 {
+#dark section > h2, section > h5 {
     text-align: center;
     color: var(--color-light);
+}
+
+#light section > h2, section > h5 {
+    text-align: center;
+    color: var( --color-primary-variant);
 }
 
 section >h2{
@@ -100,11 +105,13 @@ a:hover{
     transition: var(--transition);
 }
 
-.btn:hover{
+ .btn:hover{
     background:var(--color-white) ;
     color: var(--color-bg);
     border-color: transparent;
 }
+
+
 
 .btn-primary{
     background: var(--color-primary);
@@ -118,11 +125,19 @@ img{
 
 /*medium deivces*/
 @media screen and (max-width: 1024px){
-    .container{
+   #dark .container{
         width: var(--container-width-md);
     }
 
-    section{
+    #dark    section{
+        margin-top: 6rem;
+    }
+
+    #light .container{
+        width: var(--container-width-md);
+    }
+
+    #light section{
         margin-top: 6rem;
     }
 }
@@ -130,11 +145,33 @@ img{
 
 /*small deivces*/
 @media screen and (max-width: 600px){
-    .container{
+    #dark .container{
         width: var(--container-width-sm);
     }
 
-    section > h2{
+    #dark section > h2{
         margin-bottom: 2rem;
     }
+
+    #light .container{
+        width: var(--container-width-sm);
+    }
+
+    #light section > h2{
+        margin-bottom: 2rem;
+    }
+}
+
+#light{
+    background-color: #f3ebf6;
+}
+
+
+
+.switch{
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
 }

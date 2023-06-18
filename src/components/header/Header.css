@@ -18,10 +18,18 @@ header{
     justify-content: center;
 }
 
-.text-two , .text-light{
+#dark .text-two , .text-light{
   font-size: 1rem;
 }
 
+#light .text-two , .text-light{
+  font-size: 1rem;
+  color: var( --color-bg);
+}
+
+#light .animate-character{
+color: var( --color-primary-variant);
+}
 /* .animate-character
 {
    text-transform: uppercase;
@@ -54,7 +62,7 @@ header{
 
 /*social*/
 
-.header_socials{
+ .header_socials{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,14 +72,14 @@ header{
     bottom: 3rem;
 }
 
-.header_socials::after{
+ .header_socials::after{
     content: "";
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
 }
 
-.me{
+#dark .me{
     background: linear-gradient(var(--color-primary), transparent);
     width: 20rem;
     height: 30rem;
@@ -83,10 +91,23 @@ header{
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
+#light .me{
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 20rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 4rem;
+  border-radius: 19rem 19rem 0 0;
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+
 
 /*scorll*/
 
-.scroll_down{
+ .scroll_down{
     position: absolute;
     right: -1.6rem;
     bottom: 5rem;
@@ -95,11 +116,16 @@ header{
     font-size: 1rem;
 }
 
-
+#light .text-light{
+  color: var(--color-bg);
+}
 
 /*medium deivces*/
 @media screen and (max-width: 1024px){
-   header{
+   #dark header{
+    height: 68vh;
+   }
+   #light header{
     height: 68vh;
    }
 }
@@ -107,11 +133,19 @@ header{
 
 /*small deivces*/
 @media screen and (max-width: 600px){
-   header{
+   #dark header{
     height: 100vh;
    }
 
-   .header_socials, .scroll_down{
+   #dark .header_socials, .scroll_down{
+    display: none;
+   }
+
+   #light header{
+    height: 100vh;
+   }
+
+   #light .header_socials, .scroll_down{
     display: none;
    }
 }
