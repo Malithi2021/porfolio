@@ -1,7 +1,7 @@
 .about_container{
     display: grid;
     grid-template-columns: 35% 50%;
-    gap:15%;
+    gap:10%;
 }
 
 .about_me {
@@ -163,10 +163,12 @@
    #light .about_me{
         width: 65%;
         margin: 0 auto 3rem;
+       
     }
     #light .about_cards{
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+        
 
     }
 

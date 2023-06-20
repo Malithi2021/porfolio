@@ -1,0 +1,399 @@
+.intro {
+  display: flex;
+  height: auto;
+  margin-top: 0;
+  margin-left: 10rem;
+}
+
+#light header {
+  height: auto;
+}
+
+#dark header{
+  height: auto;
+}
+
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.i-name {
+  display: flex;
+  flex-direction: column;
+}
+
+#light .i-name > :nth-child(1) {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+
+#dark .i-name > :nth-child(1) {
+  color:var(--color-white);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name > :nth-child(2) {
+  color: var(--color-primary-variant);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 18px;
+  color: gray;
+  margin-top: 10px;
+}
+
+
+
+.cta {
+  
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+  margin-left: -26rem;
+}
+
+.i-icons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.i-icons > * {
+  transform: scale(1.5);
+}
+
+.i-icons > *:hover {
+  cursor: pointer;
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+  margin-top: -2rem;
+}
+
+.i-right > * {
+  position: absolute;
+  z-index: 10;
+}
+
+.i-right > :nth-child(1) {
+  transform: scale(0.77);
+  left: -7%;
+  top: -32.5%;
+}
+
+.i-right > :nth-child(2) {
+  transform: scale(0.99);
+  left: -3rem;
+  top: -8rem;
+}
+
+.i-right > :nth-child(3) {
+  transform: scale(0.47);
+  left: -5.8%;
+  top: -50.6%;
+}
+
+/* Media Queries */
+
+/* Medium Devices (Tablets, 1024px and below) */
+@media only screen and (max-width: 1024px) {
+    #light header{
+        margin-top: -2rem;
+        height: auto;
+    }
+  #light .intro {
+    margin-left: 5rem;
+  }
+
+  #light .cta {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+
+  #light .i-right > :nth-child(1) {
+    transform: scale(1);
+    left: -3%;
+    top: 3%;
+  }
+
+  #light .i-right > :nth-child(2) {
+    transform: scale(1.2);
+    left: -1rem;
+    top: 2rem;
+  }
+
+  #light .i-right > :nth-child(3) {
+    transform: scale(0.8);
+    left: -4%;
+    top: -8%;
+  }
+  /**/ 
+  
+  #dark header{
+    margin-top: -2rem;
+    height: auto;
+}
+#dark .intro {
+margin-left: 5rem;
+}
+
+#dark .cta {
+  margin-left: 0;
+  align-self: flex-start;
+}
+
+#dark .i-right > :nth-child(1) {
+transform: scale(1);
+left: -3%;
+top: 3%;
+}
+
+#dark .i-right > :nth-child(2) {
+transform: scale(1.2);
+left: -1rem;
+top: 2rem;
+}
+
+#dark .i-right > :nth-child(3) {
+transform: scale(0.8);
+left: -4%;
+top: -8%;
+}
+}
+
+/* Small Devices (Mobile Phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+    #light  header{
+        margin-top: -3rem;
+        text-align: center;
+        height: auto;
+    }
+  #light .intro {
+    flex-direction: column;
+    margin-left: 1rem;
+    height: auto;
+  }
+
+  #light .i-left {
+    margin-bottom: 2rem;
+   
+  }
+  
+  #light .cta {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    gap: 1rem;
+  align-self: center;
+  }
+
+  #light .i-name > :nth-child(1) {
+    font-size: 2rem;
+  }
+  
+  #light .i-name > :nth-child(2) {
+    font-size: 3rem;
+  }
+
+  #light .i-right > :nth-child(2) {
+    left: -2rem;
+    top: -1rem;
+  }
+
+  #light .i-right > :nth-child(3) {
+    left: -20%;
+    top: -40%;
+  }
+
+  #light .i-icons {
+   align-items: center;
+   display: flex;
+  justify-content: center;
+  }
+  
+
+  #light .intro {
+    flex-direction: column;
+    margin-left: 1rem;
+    height: auto;
+  }
+
+  #light .i-left {
+    margin-bottom: 2rem;
+  }
+
+  
+  /**/
+  #dark  header{
+    margin-top: -3rem;
+    text-align: center;
+    height: auto;
+}
+  #dark .intro {
+    flex-direction: column;
+    margin-left: 1rem;
+    height: auto;
+  }
+
+  #dark .i-left {
+    margin-bottom: 2rem;
+  }
+
+  #dark .cta {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    gap: 1rem;
+    align-self: center;
+  }
+
+    #dark .i-name > :nth-child(1) {
+    font-size: 2rem;
+  }
+  
+  #dark .i-name > :nth-child(2) {
+    font-size: 3rem;
+  }
+ 
+  #dark .i-right > :nth-child(1) {
+    left: -15%;
+    top: -14%;
+  }
+
+  #dark .i-right > :nth-child(2) {
+    left: -2rem;
+    top: -1rem;
+  }
+
+  #dark .i-right > :nth-child(3) {
+    left: -20%;
+    top: -40%;
+  }
+
+  #dark .i-icons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   }
+   
+}
+
+
+/* Medium Devices (Tablets, 1024px and below) */
+@media only screen and (min-width: 1280px) and (min-height: 800px) {
+    #light .cta {
+    margin-left: 0;
+    gap: 1rem;
+    align-self: flex-start;
+  }
+
+  #dark .cta {
+    margin-left: 0;
+    gap: 1rem;
+    align-self: flex-start;
+  }
+
+  #light .i-right > :nth-child(1) {
+    left: -15%;
+    top: -18%;
+  }
+
+  #light .i-right > :nth-child(2) {
+    left: -5rem;
+    top: -5rem;
+  }
+
+  #light .i-right > :nth-child(3) {
+    left: -15%;
+    top: -30%;
+  }
+
+  #dark .i-right > :nth-child(1) {
+    left: -15%;
+    top: -18%;
+  }
+
+  #dark .i-right > :nth-child(2) {
+    left: -5rem;
+    top: -5rem;
+  }
+
+  #dark .i-right > :nth-child(3) {
+    left: -15%;
+    top: -30%;
+  }
+
+}
+
+
+@media only screen and (min-width: 1027px) and (min-height: 700px) {
+  #light .cta {
+    margin-left: 0;
+    gap: 1rem;
+    align-self: flex-start;
+  }
+
+  #dark .cta {
+    margin-left: 0;
+    gap: 1rem;
+    align-self: flex-start;
+  }
+
+}
+
+@media (min-width: 1026.41px) and (max-width: 1284px) {
+  #light .cta {
+    margin-left: 0;
+    gap: 1rem;
+    align-self: flex-start;
+  }
+  #dark .cta {
+    margin-left: 0;
+    gap: 1rem;
+    align-self: flex-start;
+  }
+
+  
+  #light .i-right > :nth-child(1) {
+    left: -15%;
+    top: -18%;
+  }
+
+  #light .i-right > :nth-child(2) {
+    left: -5rem;
+    top: -5rem;
+  }
+
+  #light .i-right > :nth-child(3) {
+    left: -15%;
+    top: -30%;
+  }
+
+  
+  #dark .i-right > :nth-child(1) {
+    left: -15%;
+    top: -18%;
+  }
+
+  #dark .i-right > :nth-child(2) {
+    left: -5rem;
+    top: -5rem;
+  }
+
+  #dark .i-right > :nth-child(3) {
+    left: -15%;
+    top: -30%;
+  }
+}

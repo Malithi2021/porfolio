@@ -9,14 +9,15 @@ import Article from './components/Articles/Article';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Port from './components/portfolio/Portfolio';
+import Land from './components/landing/Landing'
 import ReactSwitch from 'react-switch';
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {BsFillSunFill} from 'react-icons/bs'
+import {GiSun} from 'react-icons/gi'
 import { createContext, useState } from 'react';
 export const ThemeContext = createContext(null)
 
 const App = () => {
-   const [theme, setTheme] = useState("dark")
+   const [theme, setTheme] = useState("light")
 
    const toggleTheme = () => {
       setTheme((curr) => (curr === "dark" ? "light" : "dark"))
@@ -33,10 +34,11 @@ const App = () => {
           offHandleColor='#00000' 
           onHandleColor='#fffff'
           checkedIcon= <BsFillMoonStarsFill />
-          uncheckedIcon= <BsFillSunFill />
+          uncheckedIcon= <GiSun />
           /></div>
      
-            <Header />
+<Land />
+            {/* <Header /> */}
             <Nav />
             <About />
             <Exp />
