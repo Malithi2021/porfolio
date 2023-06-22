@@ -5,7 +5,7 @@ import {BsMedium} from 'react-icons/bs';
 import Vector1 from '../../assets/Vector12.png'
 import Vector2 from '../../assets/Vector11.png'
 
-import CV from  '../../assets/Malithi CV Resume (3).pdf'
+import CV from  '../../assets/Malithi Abayadeera.pdf'
 
 import ME from '../../assets/me1-removebg-preview.png';
 import './Landing.css'
