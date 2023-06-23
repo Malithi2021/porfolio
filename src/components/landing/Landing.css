@@ -105,6 +105,29 @@
   top: -50.6%;
 }
 
+#light .scroll_down{
+  position: absolute;
+  right: -1.6rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+#dark .scroll_down{
+  position: absolute;
+  right: -1.6rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+
+#light .text-light{
+color: var(--color-bg);
+}
+
 /* Media Queries */
 
 /* Medium Devices (Tablets, 1024px and below) */
@@ -233,7 +256,9 @@ top: -8%;
   #light .i-left {
     margin-bottom: 2rem;
   }
-
+  #light  .scroll_down{
+    display: none;
+   }
   
   /**/
   #dark  header{
@@ -287,7 +312,9 @@ top: -8%;
     display: flex;
     justify-content: center;
    }
-   
+   #dark  .scroll_down{
+    display: none;
+   }
 }
 
 

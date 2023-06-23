@@ -37,6 +37,7 @@ function Landing() {
             </div>
 
         </div>
+        <a href="#contact" className='scroll_down'>Scroll Down</a>
         </header>
     )
 }
